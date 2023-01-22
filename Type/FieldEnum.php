@@ -16,7 +16,7 @@
  *
  */
 
-namespace BaksDev\Reference\Field;
+namespace BaksDev\Reference\Field\Type;
 
 enum FieldEnum: string
 {

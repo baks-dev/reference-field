@@ -1,6 +1,6 @@
 <?php
 
-namespace BaksDev\Reference\Field;
+namespace BaksDev\Reference\Field\Type;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\StringType;

@@ -1,6 +1,6 @@
 <?php
 
-namespace BaksDev\Reference\Field;
+namespace BaksDev\Reference\Field\Type;
 
 
 /** Типы полей */

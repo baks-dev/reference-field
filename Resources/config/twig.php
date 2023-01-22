@@ -2,7 +2,8 @@
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use BaksDev\Reference\Field\FieldExtension;
+use BaksDev\Reference\Field\Twig\FieldExtension;
+
 use Symfony\Config\TwigConfig;
 
 return static function (ContainerConfigurator $configurator, TwigConfig $config)

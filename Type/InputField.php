@@ -8,9 +8,7 @@ final class InputField
 {
 	public const TYPE = 'field_type';
 	
-	
 	private FieldEnum $field;
-	
 	
 	public function __construct(string|FieldEnum $type)
 	{

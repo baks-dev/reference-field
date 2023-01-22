@@ -2,20 +2,18 @@
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use BaksDev\Reference\Color\Twig\ColorExtension;
+use BaksDev\Reference\Field\FieldExtension;
 use Symfony\Config\TwigConfig;
 
 return static function (ContainerConfigurator $configurator, TwigConfig $config)
 {
     $services = $configurator->services()
       ->defaults()
-      ->autowire()      // Automatically injects dependencies in your services.
-      ->autoconfigure() // Automatically registers your services as commands, event subscribers, etc.
+      ->autowire()
+      ->autoconfigure()
     ;
-	
 
-	/** FieldExtension */
-	$services->set('field.type.twig.extension')
+	$services->set('reference.field.type.twig.extension')
 		->class(FieldExtension::class)
 		->tag('twig.extension');
 	

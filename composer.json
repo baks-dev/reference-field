@@ -7,7 +7,8 @@
     "symfony",
     "library",
     "reference",
-    "field"
+    "field",
+    "baks"
   ],
   "license": "MIT",
   "type": "symfony-bundle",

@@ -9,17 +9,22 @@ use Twig\TwigFunction;
 
 final class FieldExtension extends AbstractExtension
 {
-	public function getFunctions(): array
+	public function getFunctions() : array
 	{
 		return [
-			new TwigFunction('render_field', [$this, 'renderField'], ['needs_environment' => true, 'is_safe' => ['html']]),
+			new TwigFunction('render_field',
+				[$this, 'renderField'],
+				['needs_environment' => true, 'is_safe' => ['html']]
+			),
 		];
 	}
 	
-	public function renderField(Environment $twig, string $type, FormView $field): string
-    {
-        $template = '@Field/'.$type.'.html.twig';
-        
-        return $twig->render($template, ['field' => $field]);
+	
+	public function renderField(Environment $twig, string $type, FormView $field) : string
+	{
+		$template = '@Field/'.$type.'.html.twig';
+		
+		return $twig->render($template, ['field' => $field]);
 	}
+	
 }

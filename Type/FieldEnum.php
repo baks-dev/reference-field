@@ -18,16 +18,16 @@
 
 namespace BaksDev\Reference\Field\Type;
 
-enum FieldEnum: string
+enum FieldEnum : string
 {
-    case INPUT = 'input';
-    case INTEGER = 'integer';
-    case PHONE = 'phone';
-    case MAIL = 'mail';
-    case TEXTAREA = 'textarea';
-    case SELECT = 'select';
-    case SELECT2 = 'select2';
-    case RADIO = 'radio';
-    case CHECKBOX = 'checkbox';
-
+	case INPUT = 'input';
+	case INTEGER = 'integer';
+	case PHONE = 'phone';
+	case MAIL = 'mail';
+	case TEXTAREA = 'textarea';
+	case SELECT = 'select';
+	case SELECT2 = 'select2';
+	case RADIO = 'radio';
+	case CHECKBOX = 'checkbox';
+	
 }

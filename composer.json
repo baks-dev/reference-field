@@ -2,38 +2,40 @@
   "name": "baks-dev/reference-field",
   "description": "Библиотека полей формы",
   "homepage": "https://github.com/baks-dev/reference-field",
-  "keywords": ["bundle", "symfony", "library", "reference", "field"],
+  "keywords": [
+    "bundle",
+    "symfony",
+    "library",
+    "reference",
+    "field"
+  ],
   "license": "MIT",
-  "type": "library",
+  "type": "symfony-bundle",
   "authors": [
     {
       "name": "Baks Development",
       "email": "admin@baks.dev"
     }
   ],
-
   "require": {
     "php": ">=8.1",
     "symfony/form": "^6.2",
-    "symfony/twig-pack": "^1.0"
+    "symfony/twig-pack": "^1.0",
+    "symfony/orm-pack": "^2.3"
   },
-
   "require-dev": {
     "roave/security-advisories": "dev-latest"
   },
-
   "autoload": {
     "psr-4": {
       "BaksDev\\Reference\\Field\\": ""
     }
   },
-
   "autoload-dev": {
     "psr-4": {
       "BaksDev\\Reference\\Field\\Tests\\": "Tests/"
     }
   },
-
   "config": {
     "sort-packages": true,
     "allow-plugins": {

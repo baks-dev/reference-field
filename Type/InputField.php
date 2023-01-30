@@ -2,13 +2,13 @@
 
 namespace BaksDev\Reference\Field\Type;
 
-
 /** Типы полей */
 final class InputField
 {
 	public const TYPE = 'field_type';
 	
 	private FieldEnum $field;
+	
 	
 	public function __construct(string|FieldEnum $type)
 	{
@@ -22,25 +22,30 @@ final class InputField
 		}
 	}
 	
+	
 	public function __toString() : string
 	{
 		return $this->field->value;
 	}
+	
 	
 	public function getValue() : string
 	{
 		return $this->field->value;
 	}
 	
+	
 	public function getType() : FieldEnum
 	{
 		return $this->field;
 	}
 	
+	
 	public function getName() : string
 	{
 		return $this->field->name;
 	}
+	
 	
 	public static function cases() : array
 	{
@@ -53,4 +58,5 @@ final class InputField
 		
 		return $case;
 	}
+	
 }

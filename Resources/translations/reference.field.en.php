@@ -7,5 +7,5 @@ return [
 		],
 	
 	'input' => 'input',
-	
+
 ];

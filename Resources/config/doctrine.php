@@ -2,8 +2,8 @@
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use BaksDev\Reference\Field\Type\InputField;
-use BaksDev\Reference\Field\Type\InputFieldType;
+use BaksDev\Core\Type\Field\InputField;
+use BaksDev\Core\Type\Field\InputFieldType;
 
 use Symfony\Config\DoctrineConfig;
 
